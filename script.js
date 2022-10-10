@@ -25,7 +25,3 @@ function openImageWindow(src) {
 	var height = image.height;
 	window.open(src, "Image", "width=" + width + ",height=" + height);
 }
-
-
-
-
