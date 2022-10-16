@@ -133,8 +133,6 @@ body{margin: 0 auto;}
 	width: 100%;
 	height: 75vh;
 	background-attachment: fixed;
-	filter: grayscale(1);
-	transition: 1s;
 	text-align: left;
 	vertical-align: bottom;
 	p:first-child{
@@ -150,22 +148,6 @@ body{margin: 0 auto;}
 		padding: 0px 0px 0px 90px;
 	}
 }
-.mainmeny__content:hover {
-	filter: grayscale(0);
-}
-// .grey-image {
-// 	height: 75vh;
-// 	width: 100%;
-//background-attachment: fixed;
-// 	filter: grayscale(1); /* Черно-белый фильтр для изображения */
-// 	transition: 1s; /* Время изменения цвета изображения */
-// }
-// .grey-image:hover {
-// 	filter: grayscale(0); /* Цветное изображение при наведении */
-// }
-// .mainmeny__content:hover {
-// 	filter: grayscale(0);
-// }
 .services__content {
 	background-color: #F8F8FF;
 	margin: 0 auto;
@@ -442,16 +424,81 @@ body{margin: 0 auto;}
 
 	// Порядок работы
 	.howewework{
-		margin: 20px;
+		margin: 40px 0px 40px 0px;
+		h3{
+			font-size: 30px;
+			margin: 0px 0px 20px 0px;
+			color: #4169E1;
+		}
 	}
 	.howewework-block{
 		display: flex;
+		justify-content: space-around;
 	}
-	.work-block{}
-	.work-num{
-		background-color: #00008B;
+	.work-block{
 
-}
+		max-height: 200px;
+		max-width: 300px;
+		text-align: center;
+		.work-num{
+			max-width: 50px;
+			max-height: 50px;
+			line-height: 50px;
+			border-radius: 50%;
+			background-color: #1E90FF;
+			margin: 0 auto;
+		
+			}
+			h5{
+				margin: 10px 0px 5px 0px;
+				font-size: 19px;
+			}
+			p{
+				max-width: 230px;
+			}
+	}
+	.arrow-wrap {
+		transform: rotate(270deg);
+		display: inline-block;
+	}
+	.arrow-8 {
+		position: relative;
+		width: 20px;
+		height: 20px;
+		margin: 60px -150px 80px 30px;
+  }
+  .arrow-8:before,
+  .arrow-8:after {
+		content: '';
+		position: absolute;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		border-left: 8px solid #337AB7;
+		border-bottom: 8px solid #337AB7;
+		animation: arrow-8 3s linear infinite;
+  }
+  .arrow-8:after {
+		animation: arrow-8 3s linear infinite -1.5s;
+  }
+  @keyframes arrow-8 {
+		0% {
+			opacity: 0;
+			transform: translate(0, -53px) rotate(-45deg);
+		}
+		10%, 90% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;  
+			transform: translate(0, 0) rotate(-45deg);
+		}
+		100% {
+			opacity: 0;
+			transform: translate(0, 53px) rotate(-45deg);
+		}
+  }
+
 .bottom__citi {
 	background-image: url("../image/foot.jpg");
 	background-position: 0 0;
@@ -537,6 +584,9 @@ body{margin: 0 auto;}
 		-o-border-radius: 10%;
 }
 }
+.btn-social:hover {
+	opacity: 0.3;
+}
 
 .bottom__inf-contact {
 	min-height: 158px;
@@ -571,7 +621,6 @@ body{margin: 0 auto;}
 	height:60px;
 	border-radius: 50%;	
 	position: absolute;
- 
 	animation-name: pulse;
 	animation-duration: 5s;
 	animation-iteration-count:infinite;
