@@ -433,7 +433,6 @@ body {
   background-attachment: fixed;
   min-height: 499px;
   align-items: center;
-  filter: blur(5px);
 }
 
 .bottom__citi p {
@@ -539,6 +538,12 @@ body {
   width: 16px;
   height: 10px;
   background-position: -22px -39px;
+}
+
+.window {
+  min-height: 499px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .form-input {
