@@ -25,20 +25,21 @@ body {
 }
 
 .mainmeny__top {
-  height: 10vh;
+  max-height: 10vh;
   background-color: black;
   color: #fff;
-  font-size: 19px;
+  font-size: 23px;
   display: flex;
   justify-content: space-between;
   padding: 5px;
+  letter-spacing: 2px;
 }
 .mainmeny__top p {
   margin: 0px 60px 0px 10px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: "Montserrat";
-  font-weight: 700;
+  padding-bottom: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
 }
 
 .img-clock {
@@ -121,10 +122,14 @@ body {
 }
 .text-holder span:first-child {
   font-weight: 600;
+  font-family: "Merriweather";
+  font-size: 22px;
 }
 .text-holder span:last-child {
+  font-family: "Merriweather";
   font-weight: 600;
   color: #00008B;
+  font-size: 18px;
 }
 
 .mainmeny__content {
@@ -133,21 +138,27 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 75vh;
+  max-width: 1800px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
   background-attachment: fixed;
   text-align: left;
   vertical-align: bottom;
+  letter-spacing: 3px;
+  font-size: 40px;
 }
 .mainmeny__content p:first-child {
-  font-size: 40px;
   color: #00008B;
   padding: 50px 20px 50px 90px;
-  font-family: "Crimson Text SemiBold Italic";
+  font-family: "Merriweather" serif;
   font-weight: 700;
 }
 .mainmeny__content p:last-child {
   color: #00008B;
-  font-size: 15px;
+  font-size: 18px;
   padding: 0px 0px 0px 90px;
 }
 
@@ -517,8 +528,7 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-
-.btn-social:hover {
+.btn-social img:hover {
   opacity: 0.3;
 }
 
@@ -542,8 +552,12 @@ body {
 
 .window {
   min-height: 499px;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.window p {
+  font-size: 25px;
+  font-family: "Merriweather", serif;
 }
 
 .form-input {
